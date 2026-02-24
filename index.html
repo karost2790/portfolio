@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thanit Kebsiri | AI Engineer & Educator</title>
-  <meta name="description" content="25+ years in software architecture and enterprise solutions. Now focused on Generative AI, LLMs, RAG agents, AI + cybersecurity. Creator of online AI training for engineers."/>
+  <meta name="description" content="25+ years enterprise software architecture & leadership. Pivoted to Generative AI, LLMs, RAG agents, AI cybersecurity. Building online Master in AI Engineering training (2026)."/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 
-  <!-- Dark mode toggle (optional JS) -->
+  <!-- Dark mode init -->
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
@@ -26,68 +26,100 @@
 
   <!-- Hero -->
   <header class="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-24 px-6 text-center">
-    <div class="max-w-4xl mx-auto">
-      <!-- Replace with your photo URL (upload to GitHub or Cloudinary) -->
-      <img src="https://via.placeholder.com/150?text=Thanit" alt="Thanit Kebsiri" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
-      <h1 class="text-5xl font-bold mb-4">Thanit Kebsiri</h1>
-      <p class="text-2xl mb-6">AI Engineer • Educator • Software Architect</p>
-      <p class="text-lg max-w-2xl mx-auto mb-8">
-        25+ years building enterprise systems → now pioneering Generative AI, LLMs, RAG agents, and AI + cybersecurity. Creating practical online training for the next generation of AI engineers (Master in AI Engineering 2026).
+    <div class="max-w-5xl mx-auto">
+      <img src="https://via.placeholder.com/180?text=Thanit" alt="Thanit Kebsiri" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-2xl object-cover">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Thanit Kebsiri</h1>
+      <p class="text-2xl md:text-3xl mb-6">AI Engineer • Educator • Veteran Software Architect</p>
+      <p class="text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+        25+ years leading enterprise software development, architecture, and teams (Java, SOA, microservices, integration). Since 2019: Deep focus on Generative AI, LLMs, RAG-optimized agents, AI + cybersecurity. Creating practical, high-impact online training for AI Engineering professionals (target: Master-level program launch 2026).
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="https://github.com/karost" target="_blank" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">GitHub</a>
         <a href="https://th.linkedin.com/in/thanit" target="_blank" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">LinkedIn</a>
         <a href="https://medium.com/@thanitkebsiri" target="_blank" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Medium</a>
-        <a href="mailto:thanit.k9@gmail.com" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Email Me</a>
+        <a href="mailto:thanit.k9@gmail.com" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Email</a>
       </div>
     </div>
   </header>
 
   <!-- About -->
   <section id="about" class="py-20 px-6 bg-white dark:bg-gray-800">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-5xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
-      <p class="text-lg leading-relaxed mb-6">
-        With over two decades in IT management, software architecture, and enterprise integration (SOA, ESB/Mule, BPM, microservices, Java/J2EE, Spring), I led teams to deliver complex systems — including next-gen car claim platforms at Asia Insurance.
-      </p>
-      <p class="text-lg leading-relaxed mb-6">
-        Since 2019, I've pivoted to AI R&D: deep reinforcement learning, LLM integration (LangChain, OpenAI API, GPT Engineer/Pilot), finetuning (Mistral 7B), and agentic workflows. Current focus (2025–2026): Optimizing LLMs with RAG, building AI agents (spec-kit, SKILL.md style), and AI + cybersecurity (secure agents, vulnerability detection) — all to power high-quality online training for AI Engineering.
-      </p>
-      <p class="text-lg leading-relaxed">
-        Bangkok-based freelancer and instructor. Passionate about making AI accessible through hands-on, practical education.
-      </p>
+      <div class="prose dark:prose-invert max-w-none text-lg leading-relaxed space-y-6">
+        <p>With more than two decades in IT, I have managed teams, consulted on enterprise solutions, and architected complex systems across insurance, finance, government, and more. Key strengths: SOA, ESB (Mule), BPM workflows, microservices, legacy integration, project leadership (PMP/PRINCE2), and full product lifecycle delivery.</p>
+        <p>From 2019 onward, I transitioned fully into AI research and education. I explore deep reinforcement learning, LLM integration/finetuning (Mistral 7B via Hugging Face), agentic tools (LangChain, GPT Engineer/Pilot, Open Interpreter), computer vision (OpenCV), and increasingly: RAG for context-aware systems, AI agents (inspired by spec-kit, SKILL.md), and cybersecurity in AI (secure prompting, vulnerability mitigation in agents).</p>
+        <p>Based in Bangkok, I freelance as an instructor and researcher — focused on bridging traditional software engineering wisdom with modern AI to create accessible, production-ready training materials. Goal for 2026: Launch a comprehensive online Master in AI Engineering program emphasizing practical agent development and secure AI workflows.</p>
+      </div>
     </div>
   </section>
 
   <!-- Skills -->
   <section id="skills" class="py-20 px-6 bg-gray-100 dark:bg-gray-950">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12">Skills & Expertise</h2>
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Core Skills & Expertise</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-4">AI / Generative AI</h3>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Python, PyTorch, TensorFlow, Hugging Face</li>
-            <li>LLMs: LangChain, OpenAI API, GPT Engineer/Pilot, Open Interpreter</li>
-            <li>RAG, LLM Finetuning (Mistral 7B), Deep RL, OpenCV</li>
-            <li>AI Agents & Cybersecurity in AI</li>
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">AI & Generative AI</h3>
+          <ul class="list-disc pl-6 space-y-3 text-lg">
+            <li>Python, PyTorch, TensorFlow, Hugging Face, scikit-learn, Keras</li>
+            <li>LLMs & Tools: LangChain, OpenAI API, GPT Engineer/Pilot, Open Interpreter</li>
+            <li>RAG optimization, LLM finetuning (Mistral 7B AutoTrain), Deep RL, OpenCV</li>
+            <li>AI Agents, prompt engineering, AI + cybersecurity (secure agents, pen-testing integration)</li>
           </ul>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-4">Software Architecture</h3>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Java/J2EE, Spring Boot, Microservices (Kubernetes)</li>
-            <li>ESB (Mule), BPM (Camunda), SOA</li>
-            <li>Docker, Git, CI/CD</li>
-            <li>Project Mgmt: PMP, PRINCE2</li>
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">Software Architecture & Dev</h3>
+          <ul class="list-disc pl-6 space-y-3 text-lg">
+            <li>Java/J2EE, Spring Boot, Struts, Hibernate, Microservices (Kubernetes, Docker)</li>
+            <li>Integration: Mule ESB, Camunda BPM, Spring Integration, Camel</li>
+            <li>SOA, legacy modernization, CI/CD, Git</li>
+            <li>Project & Risk Management: PMP, PRINCE2, Ms Project, Rational tools</li>
           </ul>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-4">Tools & Education</h3>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Jupyter, Kali Linux (pen testing)</li>
-            <li>Online AI/LLM training for beginners</li>
-            <li>Enterprise training: Java, frameworks, integration</li>
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-indigo-600 dark:text-indigo-400">Tools, Platforms & Education</h3>
+          <ul class="list-disc pl-6 space-y-3 text-lg">
+            <li>Databases: Oracle, Sybase, MySQL, MSSQL, DB2</li>
+            <li>Security: Kali Linux pen-testing</li>
+            <li>IDEs: Jupyter, Eclipse, PowerBuilder, PowerDesigner</li>
+            <li>Training: Open-source Java, enterprise frameworks, beginner-to-advanced LLM/AI courses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Professional Experience</h2>
+      <div class="space-y-12">
+        <div>
+          <h3 class="text-2xl font-semibold">Freelance Software Development Instructor & AI Researcher</h3>
+          <p class="text-lg text-gray-600 dark:text-gray-400">Jan 2019 – Present</p>
+          <ul class="list-disc pl-6 mt-4 space-y-2 text-lg">
+            <li>Develop and deliver online training: LLMs for beginners, AI-assisted development, deep RL basics.</li>
+            <li>R&D: Integrate GPT-2 into microservice testing, OpenCV for car insurance claims, RAG/agent optimization (2025–2026 focus: spec-kit/SKILL.md style agents + AI cybersecurity).</li>
+            <li>Articles on effective prompting (Grok-3 masters, LLM coding pitfalls).</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Software Development Manager / Architect – Asia Insurance 1950 Co.,Ltd</h3>
+          <p class="text-lg text-gray-600 dark:text-gray-400">Nov 2011 – Sep 2018</p>
+          <ul class="list-disc pl-6 mt-4 space-y-2 text-lg">
+            <li>Led architecture & implementation of next-gen Car Claim System: CRM integration, Mule-ESB across legacy systems, BPM workflows, mobile frameworks, surveyor GPS routing.</li>
+            <li>Trained teams on open-source solutions, integration patterns, best practices.</li>
+            <li>R&D: P2P video conference, BPM optimization.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Earlier Leadership & Consulting Roles</h3>
+          <p class="text-lg text-gray-600 dark:text-gray-400">1995 – 2011</p>
+          <ul class="list-disc pl-6 mt-4 space-y-2 text-lg">
+            <li>Sybase DBA Consultant (Siam Commercial New York Life), Software Architecture Manager (Coda/IBM – SOA for MOL Project), Senior Consultant (Ness, JSG – e-commerce/CRM/portals).</li>
+            <li>Software Developer/Project Manager (P.S.I Technology – e-commerce/Client-Server).</li>
+            <li>Instructor/Manager (Sybase Thailand – PowerBuilder, PowerDesigner, Java R&D).</li>
           </ul>
         </div>
       </div>
@@ -95,54 +127,81 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-20 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12">Projects & R&D</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-2">Generative-AI-for-Everyone</h3>
-          <p class="mb-4">Free, hands-on course to master generative AI in a practical way.</p>
-          <a href="https://github.com/karost/Generative-AI-for-Everyone" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View on GitHub</a>
+  <section id="projects" class="py-20 px-6 bg-gray-100 dark:bg-gray-950">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Selected Projects & R&D</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">Generative-AI-for-Everyone</h3>
+          <p class="mb-4">Hands-on, free course introducing generative AI concepts and tools.</p>
+          <a href="https://github.com/karost/Generative-AI-for-Everyone" class="text-indigo-600 dark:text-indigo-400 hover:underline">GitHub →</a>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-2">Ai-Driven-Artifacts</h3>
-          <p class="mb-4">Online training microservice powered by Spring Boot + Aider AI assistant.</p>
-          <a href="https://github.com/karost/Ai-Driven-Artifacts" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View on GitHub</a>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">Ai-Driven-Artifacts</h3>
+          <p class="mb-4">Spring Boot microservice with Aider AI for dynamic online training support.</p>
+          <a href="https://github.com/karost/Ai-Driven-Artifacts" class="text-indigo-600 dark:text-indigo-400 hover:underline">GitHub →</a>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-2">2025–2026 Research</h3>
-          <p class="mb-4">RAG-optimized LLMs, AI agents (spec-kit, SKILL.md), AI + cybersecurity for secure training platforms. Upcoming: Master in AI Engineering online program.</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Active forks & exploration: Skill_Seekers, sc-agent-skills-files, anthropics-skills</p>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">Next-Gen Car Claim System (Asia Insurance)</h3>
+          <p class="mb-4">Architected integration framework (Mule-ESB + BPM) connecting legacy CRM, vendors, GPS routing, mobile comms.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg col-span-1 md:col-span-2 lg:col-span-1">
+          <h3 class="text-xl font-semibold mb-3">2025–2026 AI Research Focus</h3>
+          <p class="mb-4">RAG-enhanced LLMs, agentic systems (spec-kit, SKILL.md patterns), cybersecurity hardening for AI agents/training platforms. Foundation for upcoming Master in AI Engineering online course.</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Active exploration via GitHub forks: Skill_Seekers, sc-agent-skills-files, anthropics-skills</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Writings -->
-  <section id="writings" class="py-20 px-6 bg-gray-100 dark:bg-gray-950">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12">Writings & Thoughts</h2>
-      <ul class="space-y-6">
+  <section id="writings" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Recent Writings</h2>
+      <ul class="space-y-8">
         <li>
-          <a href="https://medium.com/@thanitkebsiri/4-good-master-prompts-for-grok-3-e4d16fa79083" target="_blank" class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">4 Good Master Prompts for Grok-3</a>
-          <p class="text-gray-600 dark:text-gray-300">Effective prompting techniques for advanced AI models.</p>
+          <a href="https://medium.com/@thanitkebsiri/4-good-master-prompts-for-grok-3-e4d16fa79083" target="_blank" class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 hover:underline block">4 Good Master Prompts for Grok-3</a>
+          <p class="text-lg mt-2">Framework for accurate, adaptive AI responses — especially for developers.</p>
         </li>
         <li>
-          <a href="https://medium.com/@thanitkebsiri/three-problem-when-using-llm-for-coding-and-fix-bug-c65b63d9e085" target="_blank" class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">Three Problems When Using LLM for Coding and Fix-Bug</a>
-          <p class="text-gray-600 dark:text-gray-300">Common pitfalls and why models repeat mistakes — with solutions.</p>
+          <a href="https://medium.com/@thanitkebsiri/three-problem-when-using-llm-for-coding-and-fix-bug-c65b63d9e085" target="_blank" class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 hover:underline block">Three Problems When Using LLM for Coding and Fix-Bug</a>
+          <p class="text-lg mt-2">Avoiding pattern locking, encouraging multi-level thinking, and more.</p>
         </li>
       </ul>
     </div>
   </section>
 
+  <!-- Education & Training -->
+  <section id="education" class="py-20 px-6 bg-gray-100 dark:bg-gray-950">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Education & Professional Training</h2>
+      <div class="space-y-8 text-lg">
+        <div>
+          <h3 class="text-2xl font-semibold">Ramkhamhaeng University</h3>
+          <p>Business Administration: Marketing (1992)</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Key Professional Trainings</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>AI Deep Reinforcement Learning & Neural Networks</li>
+            <li>Microservice Architecture, Mule-ESB, Enterprise Integration Patterns</li>
+            <li>SOA Architect, Software Quality Assurance (IBM/Coda)</li>
+            <li>Professional Project Management (Sybase)</li>
+            <li>OOP with PowerBuilder/Java</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12 text-center">
-    <p>&copy; 2026 Thanit Kebsiri. All rights reserved.</p>
-    <p class="mt-2 text-sm">Built with ❤️ using Cloudflare Pages & GitHub | Bangkok, Thailand</p>
+    <p>© 2026 Thanit Kebsiri. All rights reserved.</p>
+    <p class="mt-2 text-sm">Built with Cloudflare Pages & GitHub • Bangkok, Thailand</p>
   </footer>
 
-  <!-- Dark mode toggle button (bottom right) -->
-  <button onclick="document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition">
+  <!-- Dark mode toggle -->
+  <button onclick="document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';" class="fixed bottom-8 right-8 bg-indigo-600 text-white p-4 rounded-full shadow-xl hover:bg-indigo-700 transition text-2xl">
     🌙 / ☀️
   </button>
 
