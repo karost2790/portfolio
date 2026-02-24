@@ -13,21 +13,12 @@
     body { font-family: 'Inter', system-ui, sans-serif; }
   </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
-
-  <!-- Dark mode init -->
-  <script>
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  </script>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
 
   <!-- Hero -->
   <header class="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-24 px-6 text-center">
     <div class="max-w-5xl mx-auto">
-      <img src="./images/profile.jpg" alt="Thanit Kebsiri" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-2xl object-cover">
+      <img src="/images/profile.jpg" alt="Thanit Kebsiri" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-2xl object-cover">
       <h1 class="text-5xl md:text-6xl font-bold mb-4">Thanit Kebsiri</h1>
       <p class="text-2xl md:text-3xl mb-6">AI Engineer • Educator • Veteran Software Architect</p>
       <p class="text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -200,10 +191,45 @@
     <p class="mt-2 text-sm">Built with Cloudflare Pages & GitHub • Bangkok, Thailand</p>
   </footer>
 
-  <!-- Dark mode toggle -->
-  <button onclick="document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';" class="fixed bottom-8 right-8 bg-indigo-600 text-white p-4 rounded-full shadow-xl hover:bg-indigo-700 transition text-2xl">
-    🌙 / ☀️
+  <!-- Dark/Light mode toggle -->
+  <button id="theme-toggle" class="fixed bottom-8 right-8 bg-indigo-600 text-white p-4 rounded-full shadow-xl hover:bg-indigo-700 transition text-2xl z-50">
+    <span id="theme-icon">🌙</span>
   </button>
+
+  <!-- Theme handling script -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+        icon.textContent = '☀️';
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+        icon.textContent = '🌙';
+      }
+    }
+
+    // Load saved theme or system preference
+    if (localStorage.theme === 'dark' || 
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+
+    // Toggle on click
+    toggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
+  </script>
 
 </body>
 </html>
